@@ -267,8 +267,8 @@ o
             await target_channel.send(
                 f"{interaction.user.mention} — DM blocked, creds written below."
             )
-            dump = "\n".join(lines target_channel.send(f"```\n{dump}\n```")
-
+            dump = "\n".join(lines)[:3900]
+            await target_channel.send(f"```\n{dump}\n```")
 
 # ============================================================
 # READY
