@@ -209,7 +209,7 @@ async def spam(
         try:
             await target_channel.send(
                 f"**batch — {sum(1 for r in batch if r['ok'])}/{len(batch)} ok**\n"
-               )[ f"```\n{body}\n```:"
+               [ f"```\n{body}\n```:"
             )
         except Exception:
 390            pass
